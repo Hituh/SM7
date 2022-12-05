@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookDetailsActivity">
+
+    <ImageView
+        android:id="@+id/img_cover"
+        android:layout_width="143dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:contentDescription="@string/cover_content_description"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/book_title_text"
+        android:text="Tytuł"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_cover"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="#1c54b2"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_below="@+id/book_title_text"
+        android:textColor="#5393ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_cover"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="25dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/book_author_text"
+        android:text="Autor"
+        android:layout_below="@+id/book_title"
+        android:textColor="#1c54b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_cover"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/book_author"
+        android:textColor="#5393ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_cover"
+        android:layout_below="@+id/book_author_text"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="25dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/book_first_publish_year_text"
+        android:layout_below="@+id/book_author"
+        android:text="Rok Wydania"
+        android:textColor="#1c54b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_cover"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/book_first_publish_year"
+        android:textColor="#5393ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_cover"
+        android:layout_below="@+id/book_first_publish_year_text"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="25dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/book_languages_text"
+        android:layout_below="@+id/book_first_publish_year"
+        android:text="Języki wydania"
+        android:textColor="#1c54b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_cover"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/book_languages"
+        android:textColor="#5393ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_cover"
+        android:layout_below="@+id/book_languages_text"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="25dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+
+    <TextView
+        android:id="@+id/book_persons_text"
+        android:layout_below="@+id/book_languages"
+        android:text="Bohaterowie"
+        android:textColor="#1c54b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_cover"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/book_persons"
+        android:textColor="#5393ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_cover"
+        android:layout_below="@+id/book_persons_text"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="25dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+
+</RelativeLayout>
